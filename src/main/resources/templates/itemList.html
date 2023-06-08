@@ -8,7 +8,9 @@
 </head>
 
 <body>
-<h2>商品一覧</h2>
-<a th:href="@{/}">Topへ</a>
+　　<!--th:text="${式}"という記述で動的に文字を出力できる-->
+   <!--modelに格納した表示用日付と固定の「時点の商品一覧を文字列結合しておく」-->
+  <h2 th:text="${displayDate} + 時点の商品一覧"></h2>
+   <a th:href="@{/}">Topへ</a>
 </body>
 </html>
